@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudipa - developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color1: #F1F6F9;
+            --color2: #9BA4B5;
+            --color3: #394867;
+            --color4: #0A043C;
+            --color5: #000000;
+            --color6: rgb(182, 104, 255);
+
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+
+            background-color: var(--color4);
+            color: var(--color1);
+            font-family: 'Poppins',
+                sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 90px;
+            background-color: var(--color5);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: var(--color1);
+        }
+
+        nav ul li a:hover {
+            color: var(--color6);
+            font-size: 1.04rem;
+        }
+
+        .left {
+            font-size: 2rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 100px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 2.5rem;
+        }
+
+        .rightSection img {
+            width: 80%;
+        }
+
+        .purple {
+            color: var(--color6);
+        }
+
+        .text-gray {
+            font-size: var(--color2);
+        }
+
+        #element {
+            color: var(--color6);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        main hr {
+            border: 0;
+            height: 1.2px;
+            background: var(--color2);
+            margin: 40px 60px;
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 70vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 100px;
+            width: 150px;
+            font-size: 14px;
+        }
+
+        .vertical-duration {
+            position: relative;
+            top: 110px;
+            font-size: 12px;
+            width: 150px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 120px;
+            width: 150px;
+            font-size: 10px;
+            color: var(--color2);
+        }
+
+        .footer {
+            background-color: var(--color2);
+            display: flex;
+            height: 233px;
+            margin: 23px 122px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Sudipa's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">Hi, I am <span class="purple">Sudipa</span>
+                <div>and I am a passionate</div>
+                <!-- Element to contain animated typing -->
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="bg.jpeg"></img>
+            </div>
+            </div>
+        </section>
+        <hr>
+        <div class="secondSection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <div class="vertical-title">ML Trainee & Intern - Eisystems Technologies</div>
+                    <div class="vertical-duration">Jun-Jul (2022) </div>
+                    <div class="vertical-desc">Trained in Machine Learning and Data Analysis.
+                        Built a real-world project on ”Heart Disease Prediction System</div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title"> Research Intern - Crupid Technology Solutions</div>
+                    <div class="vertical-duration">Aug-Oct (2022) </div>
+                    <div class="vertical-desc">Developed and worked on a solution to automate product analysis tasks
+                        using IoT technologies.Co-authored a research papertitled ”IoT Enabled Sales Analytics in
+                        Hypermarket”.</div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title"> Salesforce Trainee - PwC India </div>
+                    <div class="vertical-duration">June (2023) </div>
+                    <div class="vertical-desc">Trained on and working with Salesforce cloud technology</div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title">ReactJs Summer Intern - Celebal technologies</div>
+                    <div class="vertical-duration">May-July (2023) </div>
+                    <div class="vertical-desc">Worked on assignments and day-to-day tasks related to ReactJs</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first"></div>
+            <div class="footer-second"></div>
+            <div class="footer-third"></div>
+            <div class="footer-fourth"></div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Web Designer', '&amp; ML Enthusiast.'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
